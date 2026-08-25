@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+
+cookies.lwp
+session.json
+tasks.json
+moodle_known.json
+downloads/
+__pycache__/
+*.py[cod]

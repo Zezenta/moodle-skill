@@ -1,0 +1,8 @@
+# Moodle task ignore list
+# One regex per line, case-insensitive, matched against "task_name | course_name"
+# Use .* between keywords for flexible matching
+# Lines starting with # are comments
+
+# Add your own patterns below. Examples:
+# Quiz.*Course Name
+# .*Archived Course
