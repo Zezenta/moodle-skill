@@ -1,7 +1,7 @@
 # Moodle ESPAM Skill
 
 Fetch courses, pending tasks, assignment details, and files from
-`evirtual.espam.edu.ec`.
+`campus.espam.edu.ec`.
 
 ## ESPAM-specific compatibility
 

@@ -1,7 +1,7 @@
 ---
 name: moodle
-description: Fetch tasks, deadlines, course info, and task details from ESPAM Moodle (evirtual.espam.edu.ec). Use for pending assignments, upcoming deadlines, courses, task content, or other Moodle requests.
-compatibility: Python 3.10+, outbound access to evirtual.espam.edu.ec, and ESPAM_STS_USER / ESPAM_STS_PASSWORD set. Notifications additionally need OpenClaw or Hermes.
+description: Fetch tasks, deadlines, course info, and task details from ESPAM Moodle (campus.espam.edu.ec). Use for pending assignments, upcoming deadlines, courses, task content, or other Moodle requests.
+compatibility: Python 3.10+, outbound access to campus.espam.edu.ec, and ESPAM_STS_USER / ESPAM_STS_PASSWORD set. Notifications additionally need OpenClaw or Hermes.
 ---
 
 # Moodle Integration (ESPAM)
@@ -133,7 +133,7 @@ data:
   "submission_status": "Not submitted",
   "grades": "",
   "files": [],
-  "url": "https://evirtual.espam.edu.ec/mod/assign/view.php?id=123",
+  "url": "https://campus.espam.edu.ec/mod/assign/view.php?id=123",
   "status_code": 200
 }
 ```

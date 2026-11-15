@@ -18,7 +18,7 @@ import urllib.request
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 COOKIE_JAR_PATH = os.path.join(BASE_DIR, 'cookies.lwp')
 SESSION_FILE_PATH = os.path.join(BASE_DIR, 'session.json')
-MOODLE_URL = 'https://evirtual.espam.edu.ec'
+MOODLE_URL = 'https://campus.espam.edu.ec'
 AJAX_URL = f'{MOODLE_URL}/lib/ajax/service.php'
 AUTH_SCRIPT = os.path.join(BASE_DIR, 'moodle_auth.py')
 TASKS_JSON = os.path.join(BASE_DIR, 'tasks.json')
