@@ -44,6 +44,7 @@ python3 scripts/moodle_tasks.py --oneline
 python3 scripts/list_courses_inprogress.py
 python3 scripts/moodle_task_detail.py <assignment-url> --json
 python3 scripts/moodle_check_new.py
+python3 scripts/moodle_submit.py <assignment-url> FILE   # submit a file
 ```
 
 For notification delivery, set `MOODLE_NOTIFICATION_PROVIDER` to `openclaw`

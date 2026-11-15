@@ -85,6 +85,26 @@ python3 scripts/list_courses_inprogress.py --json
 
 Shows course id, name, progress %, and category.
 
+### Submit files to an assignment
+
+```bash
+python3 scripts/moodle_submit.py <URL|cmid> --status              # submission status, time left
+python3 scripts/moodle_submit.py <URL|cmid> FILE --draft-only     # upload to draft area only (safe test)
+python3 scripts/moodle_submit.py <URL|cmid> FILE [FILE...]        # upload + save submission
+python3 scripts/moodle_submit.py <URL|cmid> FILE --replace        # replace existing file(s) if maxfiles reached
+python3 scripts/moodle_submit.py <URL|cmid> --remove              # remove current submission
+```
+
+Uses the same endpoints as the web UI: `repository/repository_ajax.php?action=upload`
+puts the file in the user's draft area, then `mod/assign/view.php` with
+`action=savesubmission` saves the submission. Respects the assignment's
+maxfiles / maxbytes.
+
+Saving a submission is visible to the teacher. Only submit when the user
+explicitly asks, and confirm the assignment and file first. Assignments that
+require clicking "Submit assignment" stay as a draft after saving
+(`_needs_submit_for_grading: true`); that confirmation step is not automated.
+
 ### Notify about newly posted tasks
 
 ```bash
