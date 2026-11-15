@@ -1,12 +1,14 @@
 ---
 name: moodle
-description: Fetch tasks, deadlines, course info, and task details from ESPAM Moodle (campus.espam.edu.ec). Use for pending assignments, upcoming deadlines, courses, task content, or other Moodle requests.
+description: Fetch tasks, deadlines, course info, and task details from ESPAM Moodle (campus.espam.edu.ec), and submit files to assignments. Use for pending assignments, submitting files, upcoming deadlines, courses, task content, or other Moodle requests. Not for grades or attendance (use academico).
 compatibility: Python 3.10+, outbound access to campus.espam.edu.ec, and ESPAM_STS_USER / ESPAM_STS_PASSWORD set. Notifications additionally need OpenClaw or Hermes.
 ---
 
 # Moodle Integration (ESPAM)
 
 Fetch courses, tasks, and assignment details from a Moodle account. Authentication is handled automatically.
+
+> For grades, attendance, subjects or professors, use the `academico` skill instead. Moodle only has tasks, deadlines, course content and submissions.
 
 ## When to Use
 
